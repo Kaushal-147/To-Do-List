@@ -1,2 +1,0 @@
-# Weathery
- Webapp for Weather 
