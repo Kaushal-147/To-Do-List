@@ -3,34 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>
         To-Do-List
     </title>
-    <style>
-        ul li::before
-        {
-            content:' ';
-            position:absolute;
-            background-image: url(images/unchecked.png);
-            border-radius: 50%;
-            height: 40%;
-            width: auto;
-            background-size: cover;
-            background-position: center;
-            top: 0.75rem;
-            left: 0.5rem;
-        }
-        .checked
-        {
-            text-decoration: line-through;
-            color: #555;
-        }
-        .checked::before
-        {
-            background-image: url(images/favicon.png);
-        }
-    </style>
+  
 </head>
 <body class="bg-gradient-to-tr from-[#547e98] to-[#1217ad] flex justify-center align-middle py-[4rem] h-[100vh] ">
 
@@ -47,16 +25,16 @@
 
 
         <div class="flex align-middle justify-center px-[5%]">
-            <input type="text" name="task" id="task" class="bg-gray-200  rounded-3xl pl-[4%] flex-1" placeholder="Add your task">
-            <input type="button" onclick="addTask()" value="Add" id="button" class=" rounded-[40px] bg-[#4d50bd] text-white py-[2%] px-[4%] cursor-pointer">
+            <input type="text" name="task" id="task" class="bg-gray-200  rounded-3xl pl-[4%] flex-1 w-[70%] ml-3" placeholder="Add your task">
+            <input type="button" onclick="addTask()" value="Add" id="button" class="mr-2 rounded-[40px] bg-[#4d50bd] w-[20%] text-white py-[2%] px-[4%] cursor-pointer hover:bg-gray-200 hover:text-[#4d50bd]">
         </div>
 
 
         <div class="">
             <ul id="list-container">
-                <li class="text-[1.063] cursor-pointer pl-[13%] pt-[1.5%] pb-[1%] relative checked">Task-1</li>
-                <li class="text-[1.063] cursor-pointer pl-[13%] pt-[1%] pb-[1%] relative">Task-2</li>
-                <li class="text-[1.063] cursor-pointer pl-[13%] pt-[1%] pb-[1%] relative">Task-3</li>
+                <li class=" checked">Task-1</li>
+                <li >Task-2</li>
+                <li >Task-3</li>
             </ul>
         </div>
 
