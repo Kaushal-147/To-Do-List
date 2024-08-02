@@ -3,7 +3,36 @@ ul li
     font-size: 1.063rem;
     cursor: pointer;
     position: relative;
-    padding: 2% 2% 2% 13% ;
+    padding: 2.2% 2% 2.2% 13% ;
+}
+
+ul li::before
+{
+    content: ' ';
+    display: inline-block;
+    background-image: url(/images/unchecked.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    top: 0.5rem;
+    position: absolute;
+    left: 1rem;
+}
+
+ul li.checked::before
+{
+    content: ' ';
+    display: inline-block;
+    background-image: url(/images/checked.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    top: 0.5rem;
+    position: absolute;
+    left: 1rem;
+    
 }
 
 ul li span
@@ -33,3 +62,13 @@ ul li span:hover
     width: auto ;
 }
 
+ul li.checked
+{
+    text-decoration: line-through ;
+    color: rgba(74, 67, 67, 0.903);
+}
+
+.div-4
+{
+    display: none;
+}
