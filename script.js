@@ -1,9 +1,10 @@
 const inputBox = document.getElementById("task");
 const listContainer = document.getElementById("list-container");
 
+/*this function will add task */
 function addTask()
 {
-    /*this function will add task */
+    
     if(inputBox.value ==="")
     {
         alert("You Must Write Something!");
@@ -22,6 +23,7 @@ function addTask()
     saveData(); 
 }
 
+//to toggle checked to unchecked and delete
 listContainer.addEventListener("click",function(e)
 {
     if(e.target.tagName === "LI")
@@ -29,14 +31,23 @@ listContainer.addEventListener("click",function(e)
         e.target.classList.toggle("checked");
         saveData(); 
     }
-    else if(e.target.tagName === "SPAN")
-    {
-        e.target.parentElement.remove();
-        saveData(); 
+    else
+    { 
+        if(e.target.tagName === "SPAN" )
+        {
+            e.target.parentElement.remove();
+            saveData(); 
+        }
+        else (e.target === "<img src=\'./images/delete.png\'>")
+        {
+            e.target.parentElement.parentElement.remove();
+            saveData();
+        }
     }
 }, false
 )
 
+//For adding task through Enter key 
 inputBox.addEventListener("keypress",function(event)
 {
     if(event.key === "Enter")

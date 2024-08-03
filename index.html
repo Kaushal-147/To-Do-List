@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<!--
+one bug to fix 
+ 1. black and white chatapata in bottom
+
+-->
+<!DOCTYPE html >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +15,10 @@
     </title>
   
 </head>
-<body class="bg-gradient-to-tr from-[#d6d9e2] to-[#4a4a52e0] flex justify-center align-middle py-[4rem] h-[100vh] ">
+<body class="bg-gradient-to-tr from-[#d6d9e2] to-[#4a4a52e0] flex justify-center align-middle py-[4rem] ">
 
 
-    <div class="bg-white w-[33%] rounded-[0.5rem] border-[0.1rem] shadow-[1px_1px_15px_rgba(0,0,0,0.7)] ">
+    <div class="bg-white w-[33%] rounded-[0.5rem] border-[0.1rem] shadow-[1px_1px_15px_rgba(0,0,0,0.7)] max-h-[100%] min-h-[50%] h-[50%]">
 
 
         <div class="flex flex-row justify-center align-middle space-x-[1.9%] mt-[5%]" >
@@ -40,7 +45,7 @@
         </div> 
 
 
-        <div class=" align-middle justify-center px-[5%] div-4 mt-[3%] flex" id="div4">
+        <div class=" align-middle justify-center px-[5%] div-4 mt-[3%] flex mb-[6%]" id="div4">
             <input type="text" name="task" id="task" class="bg-gray-200  rounded-3xl pl-[4%] w-[70%] ml-3 focus:border-transparent active:border-transparent task outline-none" placeholder="Add your task">
             <input type="button" onclick="addTask()" value="Add" id="button" class="mr-2 rounded-[40px] bg-[#5054bcec] w-[20%] text-white py-[2%] px-[4%] cursor-pointer hover:bg-[#373b9c] ">
         </div>
