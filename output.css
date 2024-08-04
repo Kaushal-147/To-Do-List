@@ -554,8 +554,12 @@ video {
   --tw-contain-style:  ;
 }
 
-.mb-\[6\%\] {
-  margin-bottom: 6%;
+.mb-\[11\%\] {
+  margin-bottom: 11%;
+}
+
+.mb-\[2\%\] {
+  margin-bottom: 2%;
 }
 
 .ml-3 {
@@ -566,48 +570,12 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-\[3\%\] {
-  margin-top: 3%;
-}
-
-.mt-\[5\%\] {
-  margin-top: 5%;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[1rem\] {
-  margin-bottom: 1rem;
-}
-
-.mt-\[6\%\] {
-  margin-top: 6%;
-}
-
-.mt-\[10\%\] {
-  margin-top: 10%;
-}
-
-.mb-\[10\%\] {
-  margin-bottom: 10%;
-}
-
-.mb-\[11\%\] {
-  margin-bottom: 11%;
-}
-
-.mt-\[11\%\] {
-  margin-top: 11%;
-}
-
 .mt-\[11\.3\%\] {
   margin-top: 11.3%;
 }
 
-.mb-\[2\%\] {
-  margin-bottom: 2%;
+.mt-\[5\%\] {
+  margin-top: 5%;
 }
 
 .flex {
