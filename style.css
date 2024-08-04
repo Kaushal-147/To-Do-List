@@ -10,7 +10,7 @@ ul li::before
 {
     content: ' ';
     display: inline-block;
-    background-image: url(/images/unchecked.png);
+    background-image: url(./images/unchecked.png);
     height: 30px;
     width: 30px;
     background-size: cover;
@@ -24,7 +24,7 @@ ul li.checked::before
 {
     content: ' ';
     display: inline-block;
-    background-image: url(/images/checked.png);
+    background-image: url(./images/checked.png);
     height: 30px;
     width: 30px;
     background-size: cover;
