@@ -10,7 +10,7 @@ ul li::before
 {
     content: ' ';
     display: inline-block;
-    background-image: url(./images/unchecked.png);
+    background-image: url('https://cdn-icons-png.flaticon.com/512/15476/15476717.png');
     height: 30px;
     width: 30px;
     background-size: cover;
@@ -24,7 +24,7 @@ ul li.checked::before
 {
     content: ' ';
     display: inline-block;
-    background-image: url(./images/checked.png);
+    background-image: url('https://cdn-icons-png.flaticon.com/512/5610/5610944.png');
     height: 30px;
     width: 30px;
     background-size: cover;
